@@ -1,5 +1,5 @@
 insert into cars
-    (year, make, model, class)
+    (year, make, model, class_type)
 values
     (2014, 'BMW', '550i', 'Sedan'),
     (1999, 'testMake', 'testModel', 'testClass'),
