@@ -4,4 +4,4 @@ create table cars {
     make varchar(100), -- Make/Manufacturer of the car
     model varchar(200), -- Specific Model of the car
     class varchar(100) -- Class of the car (i.e. Coupe, Truck, Sedan, Van, Convertible, etc.)
-}
+};
