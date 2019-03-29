@@ -5,10 +5,11 @@ Current Database:
 - Year
 - Make
 - Model
-- MPG (City/Highway)
+- Class (Car, Truck, Van, etc.)
 
 Future Additions:
+- MPG (City/Highway)
 - Engine
 - Horsepower
 - Torque
-- Class (Car, Truck, Van, etc.)
+- 0 - 60 Time
