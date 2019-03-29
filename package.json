@@ -4,7 +4,13 @@
   "description": "Current Database: - Year - Make - Model - Class (Car, Truck, Van, etc.)",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js",
+    "db:create": "createdb car-api",
+    "db:init": "psql -f schema.sql car-api && psql -f seed.sql car-api",
+    "db:destroy": "dropdb car-api",
+    "db:reset": "npm run db:destroy; npm run db:create && npm run db:init",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "test:watch": "mocha -w --reporter nyan"
   },
   "repository": {
     "type": "git",
@@ -15,5 +21,15 @@
   "bugs": {
     "url": "https://github.com/mragarg/car-api/issues"
   },
-  "homepage": "https://github.com/mragarg/car-api#readme"
+  "homepage": "https://github.com/mragarg/car-api#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "pg-promise": "^8.6.4"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^6.0.2",
+    "nodemon": "^1.18.10"
+  }
 }
